@@ -13,7 +13,7 @@
 <body>
 
 <!--사용자 입력 -->
-<form action="delete_into" method="GET">
+<form action="delete_into" method="GET">                <!--딜리트 실패시 입력한 정보 그대로-->
     1. 사용자 ID: <input type="text" name="id" value="<?php echo isset($_GET['id']) ? $_GET['id'] : null ?>"><br>
     2. 암호: <input type="text" name="pswd" value="<?php echo isset($_GET['pswd']) ? $_GET['pswd'] : null ?>"><br>
     3. <input type="submit" value="삭제하기">

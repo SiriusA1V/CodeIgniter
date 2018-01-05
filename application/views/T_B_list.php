@@ -27,6 +27,7 @@
     <?php endforeach ?>
 </table>
 <?php
+    //get방식으로 페이지네이션 활성화
     echo "<a href='b_list?add=list&page={$page[0]}'><</a>";
     for($i = 2; $i < sizeof($page); $i++){
         echo " <a href='b_list?add=list&page={$page[$i]}'>$page[$i]</a>";

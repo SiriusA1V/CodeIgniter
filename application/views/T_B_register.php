@@ -22,10 +22,13 @@
                        email:$("#email").val()
                    }
                }).done(function(data){
+                   //입력이 완료 되면 메인으로
                    if(data.length < 1)
                    {
                        window.location.replace("main");
                    }
+
+                   //입력이 완료 되지 않으면 기존 h태그를 지우고 새로 에러 메시지 생성
                     $("h").remove();
                     $("body").prepend("<h></h>");
                     $("h").prepend(data);

@@ -49,12 +49,20 @@
         <li>이름: <input type="text" id="username" value="<?php echo isset($user) ? $user[0]->name : null ?>"></li>
         <li>암호: <input type="text" id="userpassword" value="<?php echo isset($user) ? $user[0]->password : null ?>"></li>
         <li>구분: <select id="classification">
-                    <option value="staff" <?php if(isset($user) && $user[0]->classification == "staff"){echo "selected";} ?> >교직원</option>
-                    <option value="student" <?php if(isset($user)  && $user[0]->classification == "student"){echo "selected";} ?> >학생</option>
+                    <option value="staff"
+                        <?php if(isset($user) && $user[0]->classification == "staff") {echo "selected";} ?> >
+                        교직원</option>
+                    <option value="student"
+                        <?php if(isset($user)  && $user[0]->classification == "student"){echo "selected";} ?> >
+                        학생</option>
                     </select></li>
         <li>성별: <select id="gender">
-                    <option value="male" <?php if(isset($user)  && $user[0]->gender == "male"){echo "selected";} ?>>남성</option>
-                    <option value="female" <?php if(isset($user)  && $user[0]->gender == "female"){echo "selected";} ?>>여성</option>
+                    <option value="male"
+                        <?php if(isset($user)  && $user[0]->gender == "male"){echo "selected";} ?>>
+                        남성</option>
+                    <option value="female"
+                        <?php if(isset($user)  && $user[0]->gender == "female"){echo "selected";} ?>>
+                        여성</option>
                     </select></li>
         <li>전화번호: <input type="text" id="phone" value="<?php echo isset($user) ? $user[0]->phone : null ?>"></li>
         <li>이메일: <input type="text" id="email" value="<?php echo isset($user) ? $user[0]->email : null ?>"></li>
